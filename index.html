@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Manjineeshwari Sivasankar | Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background:#f5f7fb;
+      color:#1e293b;
+      line-height:1.7;
+    }
+
+    /* HEADER */
+
+    header{
+      background:#0f172a;
+      color:white;
+      padding:60px 10%;
+    }
+
+    .header-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:30px;
+    }
+
+    .header-text h1{
+      font-size:45px;
+      margin-bottom:10px;
+    }
+
+    .header-text p{
+      font-size:18px;
+      color:#cbd5e1;
+    }
+
+    .resume-btn{
+      background:#2563eb;
+      color:white;
+      padding:14px 28px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .resume-btn:hover{
+      background:#1d4ed8;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      background:white;
+      padding:18px;
+      text-align:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.08);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      text-decoration:none;
+      margin:0 18px;
+      color:#1e293b;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#2563eb;
+    }
+
+    /* SECTIONS */
+
+    section{
+      width:90%;
+      max-width:1100px;
+      margin:40px auto;
+      background:white;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    section h2{
+      margin-bottom:25px;
+      color:#0f172a;
+      border-left:5px solid #2563eb;
+      padding-left:15px;
+      font-size:30px;
+    }
+
+    /* ABOUT */
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about-stats{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px;
+    }
+
+    .stat-box{
+      background:#eff6ff;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+    }
+
+    .stat-box h3{
+      color:#2563eb;
+      font-size:32px;
+    }
+
+    /* SKILLS */
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:18px;
+    }
+
+    .skill{
+      background:#eff6ff;
+      padding:18px;
+      border-radius:10px;
+      text-align:center;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .skill:hover{
+      background:#2563eb;
+      color:white;
+    }
+
+    /* PROJECTS */
+
+    .project{
+      border-left:4px solid #2563eb;
+      padding-left:20px;
+      margin-bottom:30px;
+    }
+
+    .project h3{
+      margin-bottom:10px;
+      color:#0f172a;
+    }
+
+    /* TIMELINE */
+
+    .timeline-item{
+      margin-bottom:25px;
+      padding-bottom:20px;
+      border-bottom:1px solid #ddd;
+    }
+
+    .timeline-item h3{
+      color:#2563eb;
+      margin-bottom:8px;
+    }
+
+    /* CONTACT */
+
+    .contact p{
+      margin-bottom:15px;
+      font-size:17px;
+    }
+
+    .contact a{
+      color:#2563eb;
+      text-decoration:none;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:850px){
+
+      .about-grid{
+        grid-template-columns:1fr;
+      }
+
+      .header-container{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      nav{
+        overflow-x:auto;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="header-container">
+
+      <div class="header-text">
+
+        <h1>MANJINEESHWARI SIVASANKAR</h1>
+
+        <p>
+          Electronics Student |
+          Embedded Systems | AI Enthusiast
+        </p>
+
+      </div>
+
+      <a href="resume.pdf" target="_blank">
+        Download Resume
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <!-- ABOUT -->
+
+  <!-- ABOUT SECTION -->
+
+<section id="about">
+
+  <div class="about-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="about-left">
+
+      <p class="small-title">ABOUT ME</p>
+
+      <h2>
+          Electronics & Communication Engineering Student passionate about 
+          technology and innovation.
+      </h2>
+
+      <p>
+        I am currently pursuing B.Tech in Electronics and Communication
+        Engineering at Sri Manakula Vinayagar Engineering College,
+        Puducherry with a CGPA of 8.69.
+      </p>
+
+      <p>
+        My interests include Embedded Systems, Artificial Intelligence,
+        Networking, and Software Development. I enjoy working on projects,
+        participating in technical events, and continuously improving my skills.
+      </p>
+
+      <p>
+        Along with academics, I actively participate in volunteer activities,
+        hackathons, and symposiums to gain real-world exposure and teamwork experience.
+      </p>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="about-right">
+
+      <div class="info-panel">
+
+        <div class="info-row">
+          <span>Education</span>
+          <p>B.Tech ECE</p>
+        </div>
+
+        <div class="info-row">
+          <span>CGPA</span>
+          <p>8.69</p>
+        </div>
+
+        <div class="info-row">
+          <span>Interests</span>
+          <p>AI, Embedded Systems</p>
+        </div>
+
+        <div class="info-row">
+          <span>Strengths</span>
+          <p>Quick Learner, Team Player, Adaptability</p>
+        </div>
+
+        <div class="info-row">
+          <span>HOBBIES</span>
+          <p>Enhancing my skills,Travelling,
+             Listening to Music
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CSS -->
+
+<style>
+
+#about{
+  padding:80px 10%;
+  background:white;
+}
+
+.about-container{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.small-title{
+  color:#2563eb;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.about-left h1{
+  font-size:42px;
+  line-height:1.4;
+  margin-bottom:25px;
+  color:#0f172a;
+}
+
+.about-left p{
+  color:#475569;
+  line-height:1.9;
+  margin-bottom:18px;
+  font-size:17px;
+}
+
+/* RIGHT PANEL */
+
+.info-panel{
+  background:#f8fafc;
+  padding:35px;
+  border-radius:18px;
+  border:1px solid #e2e8f0;
+}
+
+.info-row{
+  padding:18px 0;
+  border-bottom:1px solid #e2e8f0;
+}
+
+.info-row:last-child{
+  border-bottom:none;
+}
+
+.info-row span{
+  display:block;
+  color:#2563eb;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.info-row p{
+  color:#334155;
+  line-height:1.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .about-container{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+
+  <!-- SKILLS -->
+
+  <!-- SKILLS SECTION -->
+
+<section id="skills">
+
+  <div class="skills-heading">
+
+    <p>MY SKILLS</p>
+
+    <h1>Technical & Soft Skills</h1>
+
+  </div>
+
+  <div class="skills-container">
+
+    <!-- TECHNICAL SKILLS -->
+
+    <div class="skills-box">
+
+      <h2>Technical Skills</h2>
+
+      <div class="skill-tags">
+
+        <span>C Programming</span>
+        <span>Java</span>
+        <span>Verilog</span>
+        <span>MATLAB</span>
+        <span>Vivado</span>
+        <span>Arduino IDE</span>
+        <span>Networking</span>
+        <span>Embedded Systems</span>
+        <span>Cisco Packet Tracer</span>
+
+      </div>
+
+    </div>
+
+    <!-- SOFT SKILLS -->
+
+    <div class="skills-box">
+
+      <h2>Soft Skills</h2>
+
+      <div class="skill-tags">
+
+        <span>Problem Solving</span>
+        <span>Leadership</span>
+        <span>Communication</span>
+        <span>Quick Learner</span>
+        <span>Team Collaboration</span>
+        <span>Adaptability</span>
+        <span>Time Management</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CSS -->
+
+<style>
+
+#skills{
+  padding:80px 10%;
+  background:#f8fafc;
+}
+
+.skills-heading{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.skills-heading p{
+  color:#2563eb;
+  letter-spacing:2px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.skills-heading h1{
+  font-size:42px;
+  color:#0f172a;
+}
+
+.skills-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+}
+
+.skills-box{
+  background:white;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.skills-box h2{
+  margin-bottom:25px;
+  color:#0f172a;
+  border-left:4px solid #2563eb;
+  padding-left:12px;
+}
+
+.skill-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.skill-tags span{
+  background:#eff6ff;
+  color:#1e293b;
+  padding:12px 18px;
+  border-radius:30px;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.skill-tags span:hover{
+  background:#2563eb;
+  color:white;
+  transform:translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+  .skills-container{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project">
+
+      <h3>Early Alert System in Hopper Level Monitoring</h3>
+
+      <p>
+        Developed an Arduino-based monitoring system with sensor integration
+        for hopper level monitoring and alert generation.
+      </p>
+
+    </div>
+
+    <div class="project">
+
+      <h3>Smart Security Guard Shift Verification System</h3>
+
+      <p>
+        Developing a system for watchman attendance and shift monitoring
+        using RFID and GSM technologies.
+      </p>
+
+    </div>
+
+    <div class="project">
+
+      <h3>Automated Helmet Detection and Fine Calculation</h3>
+
+      <p>
+        Developing an AI-based system to detect helmet absence and automate
+        fine calculation for rider safety monitoring.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+
+  <section id="certifications">
+
+    <h2>Certifications</h2>
+
+    <div class="timeline-item">
+      <h3>VLSI Design and Verification</h3>
+      <p>Certification from Taras System and Solution</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>NPTEL - Analog Communication</h3>
+      <p>Successfully completed NPTEL certification course</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Networking Certification</h3>
+      <p>Completed networking fundamentals certification</p>
+    </div>
+
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+
+  <section id="achievements">
+
+    <h2>Achievements & Activities</h2>
+
+    <div class="timeline-item">
+      <h3>Research Paper Presentation</h3>
+
+      <p>
+        Presented research paper at ICPCSN-2026 International Conference.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>SOF International English Olympiad</h3>
+
+      <p>
+        Secured 1st Rank with Gold Medal.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Volunteer Activities</h3>
+
+      <p>
+        Participated in Election Volunteer Duty 2026 assisting elderly
+        and specially challenged people during the voting process.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Drug Awareness Programme</h3>
+
+      <p>
+        Participated in Drug Awareness Programme conducted at Pondy Marina.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>NCC</h3>
+
+      <p>
+        NCC Cadet with Grade A certification.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact">
+
+      <p>
+        <strong>Email:</strong>
+        manjisivasankar2005@gmail.com
+      </p>
+
+      <p>
+        <strong>Phone:</strong>
+        6381081165
+      </p>
+
+      <p>
+        <strong>Location:</strong>
+        Puducherry, India
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+
+        <a href="https://linkedin.com/in/manjineeshwari-sivasankar-8039352b0" target="_blank">
+          View LinkedIn Profile
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+    Thank you for visiting my Portfolio website
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
